@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Labyrinthiformis</title>
+
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+<div id="laby-strig">
+    <svg height="1200" width="1000" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <pattern id="circles-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-2" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjEuNSIgY3k9IjEuNSIgcj0iMS41IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-3" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIyIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-4" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjIuNSIgY3k9IjIuNSIgcj0iMi41IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-5" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIzIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-6" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjMuNSIgY3k9IjMuNSIgcj0iMy41IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-7" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSI0IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-8" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjQuNSIgY3k9IjQuNSIgcj0iNC41IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="circles-9" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI1IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjRkZGJy8+CiAgPHBhdGggZD0iTS0xLDEgbDIsLTIKICAgICAgICAgICBNMCwxMCBsMTAsLTEwCiAgICAgICAgICAgTTksMTEgbDIsLTIiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-2" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjRkZGJy8+CiAgPHBhdGggZD0iTS0xLDEgbDIsLTIKICAgICAgICAgICBNMCwxMCBsMTAsLTEwCiAgICAgICAgICAgTTksMTEgbDIsLTIiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-3" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjRkZGJy8+CiAgPHBhdGggZD0iTS0xLDEgbDIsLTIKICAgICAgICAgICBNMCwxMCBsMTAsLTEwCiAgICAgICAgICAgTTksMTEgbDIsLTIiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-4" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgogIDxwYXRoIGQ9Ik0tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyIvPgo8L3N2Zz4K"
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-5" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgogIDxwYXRoIGQ9Ik0tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K"
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="diagonal-stripe-6" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgogIDxwYXRoIGQ9Ik0tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-2" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScyJyBoZWlnaHQ9JzInIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-3" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSczJyBoZWlnaHQ9JzMnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-4" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc0JyBoZWlnaHQ9JzQnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-5" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-6" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc2JyBoZWlnaHQ9JzYnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-7" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-8" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="dots-9" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc5JyBoZWlnaHQ9JzknIGZpbGw9JyMwMDAnIC8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PScxJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-2" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PScyJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-3" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSczJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-4" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc0JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-5" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc1JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-6" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc2JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-7" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc3JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-8" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc4JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="horizontal-stripe-9" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PSc5JyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScxJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-2" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPScyJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-3" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSczJyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-4" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc0JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-5" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc1JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-6" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc2JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-7" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc3JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-8" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc4JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="vertical-stripe-9" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxyZWN0IHg9JzAnIHk9JzAnIHdpZHRoPSc5JyBoZWlnaHQ9JzEwJyBmaWxsPScjMDAwJyAvPgo8L3N2Zz4="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="houndstooth" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAnIGhlaWdodD0nMTAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CiAgPHBhdGggZD0nTTAgMEw0IDQnIHN0cm9rZT0nI2FhYScgZmlsbD0nI2FhYScgc3Ryb2tlLXdpZHRoPScxJy8+CiAgPHBhdGggZD0nTTIuNSAwTDUgMi41TDUgNUw5IDlMNSA1TDEwIDVMMTAgMCcgc3Ryb2tlPScjYWFhJyBmaWxsPScjYWFhJyBzdHJva2Utd2lkdGg9JzEnLz4KICA8cGF0aCBkPSdNNSAxMEw1IDcuNUw3LjUgMTAnIHN0cm9rZT0nI2FhYScgZmlsbD0nI2FhYScgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="lightstripe" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="smalldot" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgo8cmVjdCB3aWR0aD0nNScgaGVpZ2h0PSc1JyBmaWxsPScjZmZmJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNjY2MnLz4KPC9zdmc+"
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="verticalstripe" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2JyBoZWlnaHQ9JzQ5Jz4KICA8cmVjdCB3aWR0aD0nMycgaGVpZ2h0PSc1MCcgZmlsbD0nI2ZmZicvPgogIDxyZWN0IHg9JzMnIHdpZHRoPScxJyBoZWlnaHQ9JzUwJyBmaWxsPScjY2NjJy8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="whitecarbon" patternUnits="userSpaceOnUse" width="10" height="10">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNicgaGVpZ2h0PSc2Jz4KICA8cmVjdCB3aWR0aD0nNicgaGVpZ2h0PSc2JyBmaWxsPScjZWVlZWVlJy8+CiAgPGcgaWQ9J2MnPgogICAgPHJlY3Qgd2lkdGg9JzMnIGhlaWdodD0nMycgZmlsbD0nI2U2ZTZlNicvPgogICAgPHJlY3QgeT0nMScgd2lkdGg9JzMnIGhlaWdodD0nMicgZmlsbD0nI2Q4ZDhkOCcvPgogIDwvZz4KICA8dXNlIHhsaW5rOmhyZWY9JyNjJyB4PSczJyB5PSczJy8+Cjwvc3ZnPg=="
+                       x="0" y="0" width="10" height="10">
+                </image>
+            </pattern>
+            <pattern id="x-hatch-2" patternUnits="userSpaceOnUse" width="6" height="6">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmNmY2ZjYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlPScjNTU1Jy8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="6" height="6">
+                </image>
+            </pattern>
+            <pattern id="x-hatch-3" patternUnits="userSpaceOnUse" width="6" height="6">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNlOWU5ZTknLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nNCcgc3Ryb2tlPScjMjgyODI4Jy8+Cjwvc3ZnPgo="
+                       x="0" y="0" width="6" height="6">
+                </image>
+            </pattern>
+            <pattern id="x-hatch" patternUnits="userSpaceOnUse" width="6" height="6">
+                <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2JyBoZWlnaHQ9JzYnPgogIDxyZWN0IHdpZHRoPSc2JyBoZWlnaHQ9JzYnIGZpbGw9JyNmNmY2ZjYnLz4KICA8cGF0aCBkPSdNMCAwTDYgNlpNNiAwTDAgNlonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyM5OTknLz4KPC9zdmc+Cg=="
+                       x="0" y="0" width="6" height="6">
+                </image>
+            </pattern>
+        </defs>
+    </svg>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

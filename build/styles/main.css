@@ -1,0 +1,60 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.number-input,
+.function-input {
+  display: block;
+}
+.number-input .function-signature,
+.function-input .function-signature {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+}
+.number-input input,
+.function-input input {
+  display: inline-block;
+  margin-left: 20px;
+}
+.number-input.invalid-value input,
+.function-input.invalid-value input {
+  background-color: #ffbbbb;
+}
+.label-col,
+.heading {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.label-col {
+  font-style: italic;
+}
+.label-row {
+  font-size: 14pt;
+  font-weight: bold;
+}
+g.arc,
+.legend-swatch {
+  stroke: #aaa;
+  stroke-width: 0.5;
+}
+.slice-0 {
+  fill: #b0b0b0;
+}
+.slice-1 {
+  fill: #777;
+}
+.slice-2 {
+  fill: #474747;
+}
+.slice-3 {
+  fill: #000;
+}
+.slice-4 {
+  fill: url('#x-hatch-3');
+}
+.slice-5 {
+  fill: url('#x-hatch-2');
+}
+.slice-6 {
+  fill: url('#x-hatch');
+}
