@@ -52,10 +52,9 @@ module.exports = function(grunt) {
         browserify: {
             dev: {
                 options: {
-                    transform: ['reactify'],
                     browserifyOptions: {debug: true}
                 },
-                files: {'build/scripts/main.js': ['src/scripts/main.jsx']}
+                files: {'build/scripts/main.js': ['src/scripts/main.js']}
             }
         },
 

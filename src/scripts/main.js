@@ -5,7 +5,7 @@ var _ = require('lodash'),
     metadata = require('./metadata.js'),
     parseData = require('./parse-data.js');
 
-d3.csv('coral-data.csv', function(rows) {
+d3.csv('data/coral-data.csv', function(rows) {
     var parsed = parseData(rows, metadata),
         svg = d3.select('#laby-strig>svg'),
     //renderChart = _.partial(renderBarChart, rows, metadata); // stacked bar chart
